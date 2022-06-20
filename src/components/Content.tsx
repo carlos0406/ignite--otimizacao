@@ -39,5 +39,5 @@ export function ContentComponent({ selectedGenre, movies }: ContentProps) {
 
 export const Content=memo(ContentComponent, (prevProps, nextProps) => {
   return Object.is(prevProps.movies, nextProps.movies)
-    && prevProps.selectedGenre === nextProps.selectedGenre;
+  && prevProps.selectedGenre === nextProps.selectedGenre;
 })
